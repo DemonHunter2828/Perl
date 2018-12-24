@@ -4,8 +4,9 @@
     </head>
     <body>
         <form id="inputform" method="get">
-            <input type="form" name="text" size="40">
+            <input type="form" name="text" size="40" value="[% domain_string %]">
             <input type="submit" value="Отправить">
+            <input type="hidden" value="[% backend %]">
         </form>
         <div id="output">
             [% FOREACH n IN whois %]
